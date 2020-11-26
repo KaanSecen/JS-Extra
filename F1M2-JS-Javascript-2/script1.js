@@ -38,7 +38,7 @@
         console.log("vermenigvuldigen " + antwoord); // laat ook in de console zien
         
         // Checkt of het getal 0 is.
-        if (getal1 === 0 || getal2 === 0){;
+        if (getal2 === 0){;
             delen.innerHTML = "delen door 0 kan niet he"
         } else{
             delen.innerHTML = antwoord; // schrijf naar HTML
