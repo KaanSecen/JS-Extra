@@ -1,62 +1,62 @@
 const quiz2 = 
 {
-    "quizID": "Math 1",
+    "quizID": "Lam Museum Quiz 2",
     "quizMetaData":
     {
-        "title": "Math Trivia  1",
-        "imageURI": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/x3y3z3k-1568041112.jpg?crop=0.987xw:0.790xh;0.00160xw,0.128xh&resize=980:*"
+        "title": "Lam Museum Quiz 2",
+        "imageURI": "https://images3.persgroep.net/rcs/tEq_KObRoUyNsR3VxHAMMSaoQwY/diocontent/139016913/_fitwidth/763?appId=93a17a8fd81db0de025c8abd1cca1279&quality=0.8"
 
     },
     "quizContent":		
 		[
 			{
-				"question": "What is the next prime number after 7  ",
+				"question": "Wie is de Architect van het gebouw?",
 				"answers": [{
-						"answer": "9",
+						"answer": "Jan Klaasen",
 						"feedback": false
 					},
 					{
-						"answer": "10",
+						"answer": "Arie de Groot",
 						"feedback": false
 					},
 					{
-						"answer": "11",
+						"answer": "Arie Korbee",
 						"feedback": true
 					},
 					{
-						"answer": "13",
+						"answer": "Bart Boer",
 						"feedback": false
 					}
 				]
 			},
 			{
-				"question": "65 - 43 =  ?",
+				"question": "Wat is dichterbij het Lam Museum? (KM)",
 				"answers": [{
-						"answer": "12",
+						"answer": "Haarlem",
 						"feedback": false
 					},
 					{
-						"answer": "22",
+						"answer": "Hoofdorp",
 						"feedback": true
 					},
 					{
-						"answer": "32",
+						"answer": "Leiden",
 						"feedback": false
 					}
 				]
 			},
 			{
-				"question": "Are the opposite angles of a parallelogram equal?",
+				"question": " Wie heeft Food Chain Project in het LAM museum gemaakt?",
 				"answers": [{
-						"answer": "no",
+						"answer": "Itamar Gilboa",
 						"feedback": false
 					},
 					{
-						"answer": "sometimes",
+						"answer": "Sarah Lucas",
 						"feedback": false
 					},
 					{
-						"answer": "yes",
+						"answer": "Tom Friedman",
 						"feedback": true
 					}
 				]

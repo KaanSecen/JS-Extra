@@ -9,23 +9,23 @@ const quizTitle = document.getElementById('quizTitle');
 let counter = 0; // aantal mutliple choice vragen
 let quiz; // object met quiz vragen
 let playerData = {}; // object, hierin worden de game gegevens opgeslagen
-let quiznummer = 1;
+
+let quizNummer = 1;
 
 function init(){
-    if (quiznummer === 1) {
-      quiz = quiz1;
-      initQuiz();
-    } else {
-      quiz = quiz2;
-      // initQuiz();
-      console.log("Quiz2");
+    if(quizNummer == 1){
+      quiz = quiz1; // kies de quiz
     }
-     // kies de quiz
-    // // kies de quiz
-     // start de quiz
+    else {
+      quiz = quiz2; // kies de quiz
+    }
+    initQuiz(); // start de quiz
 }
 
 function initQuiz(){
+  questionBox.style.display = "block"; // reset alle player game variabelen
+  resultBox.style.display = "none"; // reset alle player game variabelen
+  counter = 0; // reset alle player game variabelen
   playerData.goodAnswers = 0; // reset alle player game variabelen
   playerData.wrongAnswers = 0; // reset alle player game variabelen
   playerName = ""; // toekomstige uitbreiding naam speler opvragen
@@ -89,12 +89,9 @@ function finishQuiz() {
   resultBox.style.display = "block";
   quizWrapper.style.background = "silver";
   resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
-
   setTimeout(() => {  console.log("Next Quiz"); }, 2000);
-
-  quiznummer = 2;
-
-  init();
+  quizNummer = 2;
+  init()
 }
 
 init(); // start it
