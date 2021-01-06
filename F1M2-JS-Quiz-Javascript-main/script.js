@@ -10,13 +10,15 @@ let counter = 0; // aantal mutliple choice vragen
 let quiz; // object met quiz vragen
 let playerData = {}; // object, hierin worden de game gegevens opgeslagen
 
-let quizNummer = 1;
+
+let quizNummer = 0;
 
 function init(){
+    quizNummer += 1;
     if(quizNummer == 1){
       quiz = quiz1; // kies de quiz
     }
-    else {
+    if(quizNummer == 2){
       quiz = quiz2; // kies de quiz
     }
     initQuiz(); // start de quiz
@@ -88,10 +90,13 @@ function finishQuiz() {
   questionBox.style.display = "none";
   resultBox.style.display = "block";
   quizWrapper.style.background = "silver";
-  resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
   setTimeout(() => {  console.log("Next Quiz"); }, 2000);
-  quizNummer = 2;
-  init()
+  if(quizNummer == 2){
+    resultBox.innerHTML = "<h2>Jouw resultaat <br>goede antwoorden " + playerData.goodAnswers + "<br>foute antwoorden " + playerData.wrongAnswers + "</h2>";
+  }
+  else {
+    init()
+  }
 }
 
 init(); // start it
